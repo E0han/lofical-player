@@ -1,9 +1,23 @@
 import { Col } from "react-bootstrap";
 import {PlayCircleOutlined, PauseCircleOutlined, FastForwardOutlined, FastBackwardOutlined} from "@ant-design/icons"
-import { useState } from "react";
 
-const PlayerController = ()=>{
-    const [isPlay, setIsPlay] = useState(false);//是否播放in
+
+
+const PlayerController = ({
+    isPlay,
+    setIsPlay,
+    play,
+    pause
+})=>{
+
+    const handlePlay = ()=>{
+        setIsPlay(true);
+        play()
+    }
+    const handlePause = ()=>{
+        setIsPlay(false);
+        pause()
+    }
     return(
         <div className="player-controller">
             <Col lg={3} md={3} xs={3}>
@@ -15,8 +29,8 @@ const PlayerController = ()=>{
             <Col lg={2} md={2} xs={2}>
                 {
                     !isPlay
-                    ?<PlayCircleOutlined className="player-controller__play-button player-controller__animation" onClick={()=> setIsPlay(!isPlay)}/>
-                    :<PauseCircleOutlined className="player-controller__play-button player-controller__animation" onClick={()=> setIsPlay(!isPlay)}/>
+                    ?<PlayCircleOutlined className="player-controller__play-button player-controller__animation" onClick={()=> handlePlay()}/>
+                    :<PauseCircleOutlined className="player-controller__play-button player-controller__animation" onClick={()=> handlePause()}/>
                 }
                 </Col>
             <Col lg={2} md={2} xs={2}>
