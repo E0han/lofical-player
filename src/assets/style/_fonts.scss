@@ -1,0 +1,68 @@
+//fonts
+@font-face {
+    font-family: 'Photograph Script';
+    src: url("/fonts/photographyScript/Photograph\ Script\ Free\ Personal\ .otf") format('opentype');
+}
+
+@font-face {
+    font-family: $font;
+    src: url("/fonts/Myanmar/Myanmar\ MN.ttc") format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url("/fonts/Sofia/Sofia\ Pro\ Regular\ Az.otf") format('opentype');
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url("/fonts/Sofia/Sofia\ Pro\ ExtraLight\ Az.otf") format('opentype');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url("/fonts/Sofia/Sofia\ Pro\ ExtraLight\ Italic\ Az.otf") format('opentype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url("/fonts/Sofia/Sofia\ Pro\ Light\ Az.otf") format('opentype');
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url("/fonts/Sofia/Sofia\ Pro\ Light\ Italic\ Az.otf") format('opentype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url("/fonts/Sofia/Sofia\ Pro\ Medium\ Az.otf") format('opentype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url("/fonts/Sofia/Sofia\ Pro\ Medium\ Italic\ Az.otf") format('opentype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url("/fonts/Sofia/Sofia\ Pro\ Semi\ Bold\ Az.otf") format('opentype');
+    font-weight:bold;
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url("/fonts/Sofia/Sofia\ Pro\ Semi\ Bold\ Italic\ Az.otf") format('opentype');
+    font-weight: bold;
+    font-style: italic;
+}

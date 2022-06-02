@@ -1,0 +1,50 @@
+@mixin sys-mode-switch() {
+  @media (prefers-color-scheme: light) {
+    background-color: $light-bg-color;
+    color: $light-font-color;
+  }
+  @media (prefers-color-scheme: dark){
+    background-color: $dark-bg-color;
+    color: $dark-font-color;
+  }
+}
+
+
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == extra-large-desktop {
+      @media only screen and (min-width: 1500px) {
+        @content;
+      }
+    }
+    @if $breakpoint == large-desktop {
+      @media only screen and (min-width: 1200px) and (max-width: 1499px) {
+        @content;
+      }
+    }
+    @if $breakpoint == small-desktop {
+      @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        @content;
+      }
+    }
+    @if $breakpoint == extra-large-mobile {
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        @content;
+      }
+    }
+    @if $breakpoint == large-mobile {
+      @media only screen and (max-width: 767px) {
+        @content;
+      }
+    }
+    @if $breakpoint == small-mobile {
+      @media only screen and (max-width: 575px) {
+        @content;
+      }
+    }
+    @if $breakpoint == extra-small-mobile {
+      @media only screen and (max-width: 479px) {
+        @content;
+      }
+    }
+  }

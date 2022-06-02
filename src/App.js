@@ -1,25 +1,15 @@
-import logo from './assets/img/logo/logo.png';
+import AppLayout from "./Layout/AppLayout";
 import './App.css';
+import PlayerController from "./Components/Controller";
+import PlayerWindow from "./Components/PlayerWindow";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Copyright Lofical Player© ETHYANG 2022 
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      <AppLayout>
+        <PlayerWindow/>
+        <PlayerController/>
+      </AppLayout>
+  )
 }
 
 export default App;
