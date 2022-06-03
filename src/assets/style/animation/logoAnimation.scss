@@ -1,0 +1,184 @@
+// Logo Animation
+
+@-webkit-keyframes waving {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 1;
+    }
+
+    10% {
+        -webkit-transform: rotate(1deg);
+        transform: rotate(1deg);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 1;
+    }
+
+    20% {
+        -webkit-transform: rotate(2deg);
+        transform: rotate(2deg);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 1;
+    }
+    30% {
+        -webkit-transform: rotate(3deg);
+        transform: rotate(3deg);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 1;
+    }
+    40% {
+        -webkit-transform: rotate(4deg);
+        transform: rotate(4deg);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 1;
+    }
+
+    50% {
+        -webkit-transform: rotate(5deg);
+        transform: rotate(5deg);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 1;
+    }
+
+    60% {
+        -webkit-transform: rotate(4deg);
+        transform: rotate(4deg);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 1;
+    }
+
+    70% {
+        -webkit-transform: rotate(3deg);
+        transform: rotate(3deg);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 1;
+    }
+
+    80% {
+        -webkit-transform: rotate(2deg);
+        transform: rotate(2deg);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 1;
+    }
+
+    90% {
+        -webkit-transform: rotate(1deg);
+        transform: rotate(2deg);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 1;
+    }
+}
+
+@keyframes waving {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 1;
+    }
+
+    10% {
+        -webkit-transform: rotate(1deg);
+        transform: rotate(1deg);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 1;
+    }
+
+    20% {
+        -webkit-transform: rotate(2deg);
+        transform: rotate(2deg);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 1;
+    }
+    30% {
+        -webkit-transform: rotate(3deg);
+        transform: rotate(3deg);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 1;
+    }
+    40% {
+        -webkit-transform: rotate(4deg);
+        transform: rotate(4deg);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 1;
+    }
+
+    50% {
+        -webkit-transform: rotate(5deg);
+        transform: rotate(5deg);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 1;
+    }
+
+    60% {
+        -webkit-transform: rotate(4deg);
+        transform: rotate(4deg);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 1;
+    }
+
+    70% {
+        -webkit-transform: rotate(3deg);
+        transform: rotate(3deg);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 1;
+    }
+
+    80% {
+        -webkit-transform: rotate(2deg);
+        transform: rotate(2deg);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 1;
+    }
+
+    90% {
+        -webkit-transform: rotate(1deg);
+        transform: rotate(1deg);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 1;
+    }
+}
+
+.waving {
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation-name: waving;
+    animation-name: waving;
+}

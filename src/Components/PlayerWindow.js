@@ -1,4 +1,7 @@
 import { useEffect, useState } from "react";
+import { ReactComponent as LoficalLogo} from "../assets/img/logo/lofical.svg"
+import 'css-doodle';
+
 const PlayerWindow = ({
     isPlay,
     setIsPlay,
@@ -30,9 +33,19 @@ const PlayerWindow = ({
     },[go]);
     return (
         <div className="player-window">
-            <span className="player-window__lyrics">
-                {currentLine}
-            </span>
+            {
+                isPlay
+                ?
+                <span className="player-window__lyrics">
+                    {currentLine}
+                </span>
+                :
+                <div className="player-window__main_logo waving">
+                    <LoficalLogo/>
+                </div>
+            }
+            
+            
         </div>
     )
 }

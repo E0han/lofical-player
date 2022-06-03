@@ -15,6 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
+    "css-doodle": "^0.27.4",
     "lrc.js": "^1.0.2",
     "node-sass": "^4.12.0",
     "rc-texty": "^0.2.0",

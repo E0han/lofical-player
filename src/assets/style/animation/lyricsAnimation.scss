@@ -1,0 +1,140 @@
+// Lyrics Animation
+
+@-webkit-keyframes lyricsOne {
+    0% {
+        text-shadow: 0px 0px 8px gray;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    10% {
+        text-shadow: 1px 1px gray;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    20% {
+        text-shadow: 2px 2px 8px gray;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+    30% {
+        text-shadow: 3px 3px 8px gray;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+    40% {
+        text-shadow: 4px 4px 8px gray;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    50% {
+        text-shadow: 5px 5px 8px gray;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    60% {
+        text-shadow: 4px 4px 8px gray;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    70% {
+        text-shadow: 3px 3px 8px gray;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    80% {
+        text-shadow: 2px 2px 8px gray;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    90% {
+        text-shadow: 1px 1px 8px gray;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    100% {
+        text-shadow: 0px 0px 8px gray;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+}
+
+@keyframes lyricsOne {
+    0% {
+        text-shadow: 0px 0px 8px gray;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    10% {
+        text-shadow: 1px 1px 8px gray;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    20% {
+        text-shadow: 2px 2px 8px gray;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+    30% {
+        text-shadow: 3px 3px 8px gray;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+    40% {
+        text-shadow: 4px 4px 8px gray;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    50% {
+        text-shadow: 5px 5px 8px gray;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    60% {
+        text-shadow: 4px 4px 8px gray;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    70% {
+        text-shadow: 3px 3px 8px gray;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    80% {
+        text-shadow: 2px 2px 8px gray;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    90% {
+        text-shadow: 1px 1px 8px gray;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    100% {
+        text-shadow: 0px 0px 8px gray;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+}
+
+.lyricsOne {
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation-name: lyricsOne;
+    animation-name: lyricsOne;
+}
