@@ -138,3 +138,147 @@
     -webkit-animation-name: lyricsOne;
     animation-name: lyricsOne;
 }
+
+
+
+
+
+
+@-webkit-keyframes lyricsTwo {
+    0% {
+        transform: translateX(-5px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    10% {
+        transform: translateX(-4.5px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    20% {
+        transform: translateX(-4px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+    30% {
+        transform: translateX(-3.5px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+    40% {
+        transform: translateX(-3px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    50% {
+        transform: translateX(-2.5px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    60% {
+        transform: translateX(-2.5px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    70% {
+        transform: translateX(-3px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    80% {
+        transform: translateX(-3.5px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    90% {
+        transform: translateX(-4px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    100% {
+        transform: translateX(-5px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+}
+
+@keyframes lyricsTwo {
+    0% {
+        transform: translateX(-5px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    10% {
+        transform: translateX(-4.5px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    20% {
+        transform: translateX(-4px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+    30% {
+        transform: translateX(-3.5px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+    40% {
+        transform: translateX(-3px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    50% {
+        transform: translateX(-2.5px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    60% {
+        transform: translateX(-2.5px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    70% {
+        transform: translateX(-3px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    80% {
+        transform: translateX(-3.5px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    90% {
+        transform: translateX(-4px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    100% {
+        transform: translateX(-5px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+}
+
+.lyricsTwo {
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation-name: lyricsTwo;
+    animation-name: lyricsTwo;
+}

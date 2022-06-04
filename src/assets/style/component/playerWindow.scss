@@ -12,8 +12,8 @@
         
     }
     &__lyrics{
-        transform: rotate(-10deg);
-        animation: lyricsOne 1s linear infinite;
+        // transform: rotate(-5deg);
+        animation: lyricsTwo 2s ease-in-out infinite;
         font-size: 5rem;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }

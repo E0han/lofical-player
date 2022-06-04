@@ -5,6 +5,10 @@
     justify-content: space-around;
     align-items: center;
     padding: 0 20% 0 20%;
+    &__info{
+        font-size: 2rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
     &__animation{
         transition: 0.4s;
         cursor: pointer;

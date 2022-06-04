@@ -3,6 +3,8 @@ import { ReactComponent as LoficalLogo} from "../assets/img/logo/lofical.svg"
 import 'css-doodle';
 
 const PlayerWindow = ({
+    setSongInfo,
+    songInfo,
     isPlay,
     setIsPlay,
     sound,
@@ -16,21 +18,23 @@ const PlayerWindow = ({
     
 
     // console.log(lyrics)
-    const [currPos,setSoundSeek] = useState(0)
-    const [go, setGo] = useState(0)
+    // const [go, setGo] = useState(0)
     let lyrics = new LRC(lrcString)
     const [currentLine, setCurrentLine] = useState("");
-    // console.log(lyrics)
 
     useEffect(()=>{
-        if(isPlay){
-            const curr = lyrics.currentLine(Math.round(sound.seek(),2))
-            if(curr!==null){
-                setCurrentLine(curr.text)
+        const interval = setInterval(()=>{
+            if(isPlay){
+                console.log(sound)
+                const curr = lyrics.currentLine(Math.round(sound.seek(),2))
+                if(curr!==null){
+                    setCurrentLine(curr.text)
+                }
             }
-        }
-        setGo(go+1)
-    },[go]);
+        }, 500);
+        return ()=> clearInterval(interval)
+        
+    },[isPlay]);
     return (
         <div className="player-window">
             {
@@ -44,8 +48,6 @@ const PlayerWindow = ({
                     <LoficalLogo/>
                 </div>
             }
-            
-            
         </div>
     )
 }

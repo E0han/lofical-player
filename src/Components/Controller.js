@@ -7,7 +7,8 @@ const PlayerController = ({
     isPlay,
     setIsPlay,
     play,
-    pause
+    pause,
+    sound
 })=>{
 
     const handlePlay = ()=>{
@@ -20,6 +21,14 @@ const PlayerController = ({
     }
     return(
         <div className="player-controller">
+            {
+                sound===null
+                ? 
+                <Col lg={12} md={12} xs={12}>
+                    <span className="player-controller__info">LOADING RESOURCE ...</span>
+                </Col>
+                : 
+            <>
             <Col lg={3} md={3} xs={3}>
 
             </Col>
@@ -39,6 +48,8 @@ const PlayerController = ({
             <Col lg={3} md={3} xs={3}>
                 
             </Col>
+            </>
+            }
         </div>
     )
 }

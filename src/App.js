@@ -10,18 +10,20 @@ import useSound from "use-sound";
 function App() {
   const [isPlay, setIsPlay] = useState(false);//是否播放in
   const [lrcString, setLrcString] = useState("");//歌词
+  const [songInfo, setSongInfo] = useState({});//歌曲信息
   const [play, {stop,pause,duration,sound}] = useSound(testSong);
-  
   useEffect(async ()=>{
+    console.log(isPlay)
     const res = await fetch(testLyrics).then(
-      response => response.text()
-    )
+      response => {
+        return response.text();
+      })
     setLrcString(res)
-  },[])
+  },[isPlay])
   return (
       <AppLayout>
-        <PlayerWindow isPlay={isPlay} setIsPlay={setIsPlay} sound={sound} lrcString={lrcString}/>
-        <PlayerController isPlay={isPlay} setIsPlay={setIsPlay} play={play} pause={pause}/>
+        <PlayerWindow isPlay={isPlay} setIsPlay={setIsPlay} sound={sound} lrcString={lrcString} songInfo={songInfo} setSongInfo={setSongInfo}/>
+        <PlayerController isPlay={isPlay} setIsPlay={setIsPlay} play={play} pause={pause} sound={sound}/>
       </AppLayout>
   )
 }
