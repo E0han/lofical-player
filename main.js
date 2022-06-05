@@ -6,6 +6,9 @@ const createWindow = () => {
     const win = new BrowserWindow({
       width: 600,
       height: 600,
+      title: 'LOFICAL',
+      skipTaskbar: true,
+      icon: './build/lofical_mac.png',
       webPreferences:{
           preload: './preload.js'
       }
@@ -15,6 +18,8 @@ const createWindow = () => {
         "./build/index.html"
     )  // load the index.html of the app.
     
+    
+
     ipcMain.handle('dark-mode:toggle', () => {
         if (nativeTheme.shouldUseDarkColors) {
           nativeTheme.themeSource = 'light'
@@ -33,6 +38,11 @@ const createWindow = () => {
 
 
   }
+
+app.setName('LOFICAL')
+if(process.platform === 'darwin'){
+  app.dock.setIcon('./build/lofical_mac.png')
+}
 
 app.whenReady().then(() => {
     app.on('close', ()=>{

@@ -7,6 +7,7 @@ import testSong from "./assets/songs/test/JJ-Lin-Lose-Control.mp3";
 import testLyrics from "./assets/songs/test/JJ-Lin-Lose-Control.lrc"
 import useSound from "use-sound";
 
+
 function App() {
   const [isPlay, setIsPlay] = useState(false);//是否播放in
   const [lrcString, setLrcString] = useState("");//歌词

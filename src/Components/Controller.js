@@ -1,8 +1,6 @@
 import { Col } from "react-bootstrap";
 import {PlayCircleOutlined, PauseCircleOutlined, FastForwardOutlined, FastBackwardOutlined} from "@ant-design/icons"
 
-
-
 const PlayerController = ({
     isPlay,
     setIsPlay,
